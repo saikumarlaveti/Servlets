@@ -1,0 +1,16 @@
+<web-app>
+<context-param>
+		<param-name>count</param-name>
+		<param-value>23</param-value>
+</context-param>
+
+<servlet>
+	<servlet-name>abc</servlet-name>
+	<servlet-class>com.context.User</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>abc</servlet-name>
+	<url-pattern>/xyz</url-pattern>
+</servlet-mapping>
+</web-app>

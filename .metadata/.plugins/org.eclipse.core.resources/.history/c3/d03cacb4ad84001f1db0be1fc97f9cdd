@@ -1,0 +1,30 @@
+package tasks;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class Student1 extends HttpServlet {
+	String college ;
+	public void init(ServletConfig sn)
+	{
+		
+		college = sn.getInitParameter("details");
+	}
+	
+	public void server(HttpServletRequest request,HttpServletResponse response) throws IOException
+	{
+		PrintWriter pw = response.getWriter();
+		pw.println(college);
+		pw.close();
+	}
+	public void destory()
+	{
+		
+	}
+		
+}

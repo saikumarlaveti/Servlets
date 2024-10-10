@@ -1,0 +1,23 @@
+<web-app>
+<servlet>
+	<servlet-name>abc</servlet-name>
+	<servlet-class>com.test.GivenServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<sevlet-name>abc</sevlet-name>
+	<url-mapping>/xyz</url-mapping>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>def</servlet-name>
+	<servlet-class>com.test.Taken</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<sevlet-name>def</sevlet-name>
+	<url-mapping></url-mapping>
+</servlet-mapping>
+
+
+</web-app>

@@ -1,0 +1,15 @@
+<web-app>
+<servlet>
+	<servlet-name>servlet1</servlet-name>
+	<servlet-class>com.demo.UserName</servlet-class>
+<init-param>
+	<param-name>age</param-name>
+	<param-value>24</param-value>	
+</init-param>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>servlet1</servlet-name>
+	<url-pattern>/java</url-pattern>
+</servlet-mapping>
+</web-app>

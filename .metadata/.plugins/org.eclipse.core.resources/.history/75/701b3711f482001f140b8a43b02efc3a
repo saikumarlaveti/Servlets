@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<servlet>
+	<servlet-name>abc</servlet-name>
+	<servlet-class>com.config.User</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>abc</servlet-name>
+	<url-pattern>/sai</url-pattern>
+</servlet-mapping>
+ 
+ <init-param>
+ <param-name>count</param-name>
+ <param-value>10</param-value>
+ </init-param>
+ 
+</web-app>

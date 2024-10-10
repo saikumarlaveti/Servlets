@@ -1,0 +1,23 @@
+package com.demo;
+
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class UserName extends HttpServlet {
+	
+	public void init(ServletConfig sc)
+	{
+		
+	}
+	public void service(HttpServletRequest request,HttpServletResponse response)
+	{
+		
+	}
+
+	public void destroy()
+	{
+		
+	}
+}

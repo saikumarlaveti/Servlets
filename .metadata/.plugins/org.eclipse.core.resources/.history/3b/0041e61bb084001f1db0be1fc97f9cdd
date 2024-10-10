@@ -1,0 +1,18 @@
+<web-app>
+<servlet>
+	<servlet-name>servlet1</servlet-name>
+	<servlet-class>tasks.Student1</servlet-class>
+</servlet>
+
+<context-param>
+	<param-name>details</param-name>
+	<param-value>p.b siddhartha college of arts and science</param-value>
+</context-param>
+<servlet-mapping>
+	<servlet-name>servlet1</servlet-name>
+	<url-pattern>/role</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>

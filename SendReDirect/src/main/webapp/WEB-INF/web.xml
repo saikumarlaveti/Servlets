@@ -1,0 +1,14 @@
+<web-app>
+
+
+<servlet>
+	<servlet-name>send</servlet-name>
+	<servlet-class>com.go.SearchController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>send</servlet-name>
+	<url-pattern>/search</url-pattern>
+</servlet-mapping>
+
+</web-app>

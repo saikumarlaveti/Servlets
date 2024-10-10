@@ -1,0 +1,50 @@
+package com.test;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class Taken extends HttpServlet {
+	
+	private String name;
+
+	public void init() throws ServletException
+	{
+		ServletConfig sc = getServletConfig();
+		String name1 = sc.getInitParameter("name");
+		if(name1 != null)
+		{
+			try {
+				name = name1;
+			}
+			catch(Exception e)
+			{
+				throw(e);
+			}
+		}
+	}
+
+	public void service(HttpServletRequest req,HttpServletResponse res) throws IOException
+	{	
+		res.setContentType("text/html");
+		PrintWriter out = res.getWriter();
+		
+//		ServletContext sct = req.getServletContext();
+		
+		String name = (String) req.getAttribute("name");
+		
+		System.out.println(name);
+		
+	}
+	
+	public void destory()
+	{
+		
+	}
+}

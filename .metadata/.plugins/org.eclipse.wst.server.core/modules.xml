@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:Attribute" serverId="apache-tomcat-10.1.24 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Url_Rewriting" serverId="apache-tomcat-10.1.24 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ServletContext" serverId="apache-tomcat-10.1.24 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Calculator" serverId="apache-tomcat-10.1.24 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ServletConfiguration" serverId="apache-tomcat-10.1.24 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ServletDemo" serverId="apache-tomcat-10.1.24 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SendReDirect" serverId="apache-tomcat-10.1.24 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:LoginForm" serverId="apache-tomcat-10.1.24 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Cookies" serverId="apache-tomcat-10.1.24 at localhost"/>
+</modules>

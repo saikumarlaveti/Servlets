@@ -1,0 +1,33 @@
+package com.config;
+
+import java.io.IOException;
+
+import jakarta.servlet.GenericServlet;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServlet;
+
+public class User extends HttpServlet {
+	
+	public  int count ;
+	
+	public void init(ServletConfig sc) throws ServletException
+	{
+		 count =Integer.parseInt(sc.getInitParameter("count"));
+		
+	}
+	public void service(ServletRequest req,ServletResponse res) throws IOException,ServletException
+	{
+		res.setContentType("text/html");
+		res.getWriter().println("Count value is: " +count);
+		
+	}
+	
+	public void distory()
+	{
+		
+	}
+
+}

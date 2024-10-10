@@ -1,0 +1,16 @@
+package com.context;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class User extends HttpServlet {
+	
+	public void service(HttpServletRequest req ,HttpServletResponse res)
+	{
+		int age =Integer.parseInt(req.getParameter("count"));
+		System.out.println("Student age  is "+age);
+		
+	}
+
+}

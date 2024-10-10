@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app >
+
+
+  <servlet>
+  <servlet-name>user</servlet-name>
+  <servlet-class>com.valid.User</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>user</servlet-name>
+  <url-pattern>/valid</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>verif</servlet-name>
+  <servlet-class>com.valid.Verifying</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>verif</servlet-name>
+  <url-pattern>/ver</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+</web-app>

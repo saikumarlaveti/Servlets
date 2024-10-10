@@ -1,0 +1,29 @@
+package com.valid;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class Verifying extends HttpServlet {
+	
+	public void doPost(HttpServletRequest req, HttpServletResponse res)
+	{
+		String name  = req.getParameter("name");
+		String password = req.getParameter("password");
+		
+		String name1 = "Saikumar";
+		String password1 = "123456";
+		
+		if(name.equals(name1) && password.equals(password1))
+		{
+			System.out.print("Correct Details");
+		}
+		else
+		{
+			RequestDispatcher rd = req.getRequestDispatcher("LoginPage.html");
+		}
+		
+	}
+
+}

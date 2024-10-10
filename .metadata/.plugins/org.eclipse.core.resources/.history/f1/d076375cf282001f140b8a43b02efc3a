@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<Servlet>
+	<Servlet-name>abc</Servlet-name>
+	<Servlet-class>com.config.User</Servlet-class>
+</Servlet>
+
+<Servlet-mapping>
+	<Servlet-name>abc</Servlet-name>
+	<url-pattern>/para</url-pattern>
+</Servlet-mapping>
+ 
+ <init-param>
+ <param-name>count</param-name>
+ <param-value>10</param-value>
+ </init-param>
+ 
+</web-app>
